@@ -62,102 +62,31 @@ Please go into the #labs channel in our Slack team and find the announcement tha
 
 ## Tasks
 
-For this laboratory assignment, you will complete a set of small experiments to gain a deeper understanding into scoping and code optimization related to scopes. The main deliverable of this assignment is the lab report document. 
-
-### Scopes in JavaScript
-
-Consider the following JavaScript program - what value is printed by the final line—is it "hello" or is it "10"?
-
-```
-        var x = "hello";
-
-        function f() {
-           x = 10;
-           console.log("x ="+x);
-           var x;
-        }
-
-        f();
-        console.log("x="+x); /* What gets printed, "hello" or 10? */
-```
-    In your report, answer the question above (easy! just run it!), then
-(a) explain how JavaScript's "function scope'' rule is interpreted,
-and (b) state whether or not JavaScript requires "declare before use''
-for variables.
-
-
-### Frames
-
-Go to the [PythonTutor Website](http://www.pythontutor.com) and click
-on the link to "Start writing and visualizing code now!''
-
-From the dropdown menu, choose JavaScript. Enter the following
-code:  
-
-```
-     function f(x) {
-       g(x+1);
-     }
-     function g(x) {
-       console.log("in g, x ="+x);
-     }
-     f(3);
-```
-
-Click the "Visualize Execution'' button and then keep pressing the
-"Next" button, watching the animation on the right side at each
-step.
-
-In your report document, provide a brief (one paragraph) explanation of the various stack frames that appear and disappear.
-
-### Stack Structure in Java
-
-Generate the JVM bytecode for the Java class `Stack1.java` (in the "src" directory). There is no "main" here, so you can’t run this, but you can still compile it and view the bytecode with either jbe or the javap -c command (refer to activity1).
-In bytecode, the instructions "iload", "dload", "istore", and "dstore" take a numeric argument that specifies a location in the activation record (or frame). (Sometimes this argument is part of the instruction name, e.g, "iload_1"). In your report, "draw" the portion of the frame containing the parameters and local variables of function `f`, showing where each parameter `i`, `j`, `a`, etc., and each local variable sum, etc., appears in the frame. By "draw" I just mean something like this:
-
-```
-        1:   name of variable in frame location 1
-        2:   name of variable in frame location 2
-        3:   name of variable in frame locations 3 and 4 *
-        5:     etc.
-```
-* Recall that a `double` takes twice as many spaces as an `int`.
-
-### A stack machine computation
-
-Generate the byte code for program `Stack2.java`. Assume that function `f` is called with `x = 10, y = 20`. "Draw" the frame for `f` (as in the previous section). Then "draw" the contents of the stack after each line of bytecode in function `f`. If the stack contains the value of a variable, name it. For instance, after the first two lines of bytecode are executed, the stack looks like this (I’m assuming the stack grows upward):
-```
-20 (y) 
-10 (x)
-```
-
-and after the third line it looks like:
-```
-30
-```
-
-Remember how a stack machine works: operators like "add" pop their operands off the stack and then push the result (the above example shows how `x` and `y` are pushed on the stack, then they are popped and the value of `x+y` is pushed onto the stack.)
-
-## Optimization
-
-Look once more at Java program `Stack2.java` and its bytecode. How could this bytecode be optimized, i.e., shortened to fewer instructions? Answer this question, explaining and showing your optimized bytecode, in your document. (Feel free to experiment with the jbe editor.)
+For this laboratory assignment, you will complete a set of small experiments to gain a deeper understanding into scoping. Please navigate to the "writing/report.md" document to find outline of specific experiments  and the tasks you are invited to engage in.
 
 
 ### Docker
 
-To run your Python program using Docker Desktop, you need to first create a Docker image and then create and run the Docker container, using the following two commands, which are appropriate for your operating system.
+We use Docker for this course. This provides an environment with the languages that will be used in the class and ensures that everyone uses the same versions for help and grading purposes.  Follow the instructions at the `progator` Docker image link provided  belowto get started.  
+ 
+[progator docker Image](https://hub.docker.com/repository/docker/janyljumadinova/progator)
 
-_Mac/Linux:_
+### Working in the Localhost Window
+Once you have localhost open in your browser, all other instructions will be completed in that window. If you close the window, just go to localhost again - you will not lose anything.
 
-`docker build -t sly .`
+When you open localhost, you will see:
 
-`docker run --rm -v $(pwd)/src:/root sly python3 lab02.py`
+![](InstructionImages/Image1.png?raw=true)
 
-_Windows:_
+On the left side, click on the Explorer icon (2nd down).
+Click Open Folder and enter "/root/"
+![](InstructionImages/Image2.png?raw=true)
 
-`docker build -t sly .`
+In the Explorer frame, right click, and click on Open in Integrated Terminal.
+![](InstructionImages/Image3.png?raw=true)
 
-`docker run --rm -v "%cd%/src":/root sly python3 lab02.py`
+You now have a terminal in which you can run most typical Linux commands. Ubuntu 20.04 is running with VSCode. Most work will be completed in the terminal. Documents can be opened above the terminal. To the left in explorer, you can see unsaved files. Click on unsaved to give the document a name and location. After that, it will autosave. 
+![](InstructionImages/Image4.png?raw=true)
 
 ### GatorGrader
 
