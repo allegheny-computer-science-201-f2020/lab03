@@ -7,16 +7,17 @@
 Consider the following JavaScript program - what value is printed by the final line—is it "hello" or is it "10"?
 
 ```
-        var x = "hello";
+var greeting = "hello";
 
-        function f() {
-           x = 10;
-           console.log("x ="+x);
-           var x;
-        }
+function privet() {
+   greeting = 10;
+   console.log("greeting = " + x);
+   var greeting;
+}
 
-        f();
-        console.log("x="+x); /* What gets printed, "hello" or 10? */
+privet();
+console.log("greeting = " + x);
+
 ```
 
 *Questions*:
@@ -44,7 +45,7 @@ code:
        g(x+1);
      }
      function g(x) {
-       console.log("in g, x ="+x);
+       console.log("in g, x = " + x);
      }
      f(3);
 ```
@@ -93,3 +94,5 @@ Remember how a stack machine works: operators like "add" pop their operands off 
 *Question*:
 4. "Draw" the frame for `f` (as in the previous section). Then "draw" the contents of the stack after each line of bytecode in function `f`. 
 TODO
+
+### Reflection

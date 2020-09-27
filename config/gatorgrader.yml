@@ -1,5 +1,5 @@
 ---
-name: lab02
+name: lab03
 break: true
 indent: 4
 ---
@@ -16,20 +16,24 @@ indent: 4
 
 # --> check the source code for various characteristics
 src:
-    lab02:
+    Scope.js:
             ConfirmFileExists
-            CountSingleLineComments --language Python --count 4
+            CountSingleLineComments --language Java --count 4
             #CountMultipleLineComments --language Java --count 2
             MatchFileFragment --fragment "TODO" --count 0 --exact
             MatchFileFragment --fragment "Add Your Names Here" --count 0 --exact
-            MatchFileFragment --fragment "MyLexer" --count 2
-            MatchFileFragment --fragment "MyParser" --count 2
-            MatchFileFragment --fragment "@_" --count 10
-            MatchFileFragment --fragment "literals" --count 1
-            MatchFileFragment --fragment "tokens" --count 1
-            MatchFileFragment --fragment "ignore" --count 1
-            MatchFileFragment --fragment "tokenize" --count 1
-            MatchFileFragment --fragment "parse" --count 1
+    Stack1.java:
+            ConfirmFileExists
+            CountSingleLineComments --language Java --count 4
+            #CountMultipleLineComments --language Java --count 2
+            MatchFileFragment --fragment "TODO" --count 0 --exact
+            MatchFileFragment --fragment "Add Your Names Here" --count 0 --exact
+    Stack2.java:
+            ConfirmFileExists
+            CountSingleLineComments --language Java --count 4
+            #CountMultipleLineComments --language Java --count 2
+            MatchFileFragment --fragment "TODO" --count 0 --exact
+            MatchFileFragment --fragment "Add Your Names Here" --count 0 --exact
 
 # --> check the technical writing for various characteristics
 writing/report.md:
