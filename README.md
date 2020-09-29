@@ -69,11 +69,11 @@ Download automated build from public Docker Hub Registry:
 
 #### Running
 
-`docker run -d -p 80:80 jjumadinova/progator`
+`docker run -d -p 80:80 janyljumadinova/progator`
 
 You can mount a directory as a volume with the argument *-v /your-path/directory/:/root/ like this :
 
-`docker run -d -p 80:80 -v /your-path/local/working/directory/:/root/environment jjumadinova/progator`
+`docker run -d -p 80:80 -v /your-path/local/working/directory/:/root/environment janyljumadinova/progator`
 
 #### Accessing the IDE
 
