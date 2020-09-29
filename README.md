@@ -75,7 +75,7 @@ You can mount a directory as a volume with the argument *-v /your-path/directory
 
 `docker run -d -p 80:80 -v /your-path/local/working/directory/:/root/environment jjumadinova/progator`
 
-####Accessing the IDE
+#### Accessing the IDE
 
 [http://localhost](http://localhost)
 
