@@ -1,6 +1,6 @@
 # :crocodile: Developing a Programming Language, CMPSC 201 Fall 2020: LAB 02 Assignment
 
-## DUE: October 6th by 3:00pm
+## DUE: October 8th by 3:00pm
 
 [![Actions Status](../../workflows/build/badge.svg)](../../actions)
 
