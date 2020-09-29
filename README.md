@@ -57,9 +57,27 @@ For this laboratory assignment, you will complete a set of small experiments to 
 
 ### Docker
 
-We use Docker for this course. This provides an environment with the languages that will be used in the class and ensures that everyone uses the same versions for help and grading purposes. Follow the instructions at the `progator` Docker image link provided below to get started. Additionally, please watch the lab introduction video for a working example of how to access the Docker image for this course and how to mount a directory as a volume.
+We use Docker for this course. This provides an environment with the languages that will be used in the class and ensures that everyone uses the same versions for help and grading purposes. Follow the instructions below, which can also be found at the `progator` Docker image link provided below, to get started. Additionally, please watch the lab introduction video for a working example of how to access the Docker image for this course and how to mount a directory as a volume.
 
 [progator Docker Image](https://hub.docker.com/repository/docker/janyljumadinova/progator)
+
+#### Pulling Image
+
+Download automated build from public Docker Hub Registry:
+
+`docker pull janyljumadinova/progator`
+
+#### Running
+
+`docker run -d -p 80:80 jjumadinova/progator`
+
+You can mount a directory as a volume with the argument *-v /your-path/directory/:/root/ like this :
+
+`docker run -d -p 80:80 -v /your-path/local/working/directory/:/root/environment jjumadinova/progator`
+
+####Accessing the IDE
+
+[http://localhost](http://localhost)
 
 ### Working in the Localhost Window
 
