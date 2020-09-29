@@ -32,7 +32,7 @@
 
 Designed for use with [GitHub Classroom](https://classroom.github.com/), this repository contains starter materials for lab 03 in [Computer Science 201 Fall 2020](https://cs.allegheny.edu/sites/jjumadinova/teaching/201). The lab03 assignment invites individuals to experiment with scoping.
 
-Please watch a video introducing this lab assignment under the course's YouTube playlist: [Lab 03 Assignment Introduction](https://www.youtube.complaylist?list=PLz9YRLfRGO9JpJfVknMPnK_jagA0mgxN0)
+Please watch a video introducing this lab assignment under the course's YouTube playlist: [Lab 03 Assignment Introduction](https://www.youtube.com/playlist?list=PLz9YRLfRGO9JpJfVknMPnK_jagA0mgxN0)
 
 ## Objectives
 
