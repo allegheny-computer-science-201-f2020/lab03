@@ -40,7 +40,7 @@ src:
 # --> check the technical writing for various characteristics
 writing/report.md:
     ConfirmFileExists
-    CountFileWords --count 800
+    CountFileWords --count 900
     CountMarkdownTags --tag "heading" --count 7 --exact
     #CountMarkdownTags --tag "code" --count 3 --exact
     CountMarkdownTags --tag "code_block" --count 6 --exact
