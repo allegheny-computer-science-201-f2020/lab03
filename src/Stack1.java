@@ -10,6 +10,7 @@ public class Stack1 {
     char max;
     sum = num1 + num2;
     prod = numd1 * numd2;
+    // TODO add another expression that uses sum and prod in some way
     max = char1;
     if (char1 < char2) {
       max = char2;

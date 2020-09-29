@@ -20,7 +20,7 @@ TODO
 
 1.3\. Based on the `Scope.js` program and your understanding of scoping, explain how JavaScript's "function scope'' rule is interpreted. TODO
 
-1.4\. State whether or not JavaScript requires "declare before use'' for variables. 
+1.4\. State whether or not JavaScript requires "declare before use'' for variables.
 
 TODO
 
@@ -42,7 +42,7 @@ From the dropdown menu, choose JavaScript. Enter the following code:
 
 Click the "Visualize Execution'' button and then keep pressing the "Next" button, watching the animation on the right side at each step.
 
-_Question_: 2\. Provide a brief (one paragraph) explanation of the various stack frames that appear and disappear. 
+_Question_: 2\. Provide a brief (one paragraph) explanation of the various stack frames that appear and disappear.
 
 TODO
 
@@ -64,7 +64,7 @@ To learn more about Java bytecode specification and instructions consider the fo
 
 Generate the JVM bytecode for the Java class `Stack1.java` (in the "src" directory). There is no "main" here, so you can't run this, but you can still compile it using `javac Stack1.java` command in the terminal of the "src" directory (where this program is located) and view the bytecode with `javap -c Stack1.class` command. In bytecode, the instructions "iload", "dload", "istore", and "dstore" take a numeric argument that specifies a location in the activation record (or frame). Sometimes this argument is part of the instruction name, e.g, "iload_1".
 
-_Question_: 3\. Specify. the portion of the frame containing the parameters and local variables of function `func`, showing where each parameter `num1`, `num2`, `numd1`, etc., and each local variable sum, etc., appears in the frame. For example, the details you are required to provide are as follows:
+_Question_: 3.1\. Specify. the portion of the frame containing the parameters and local variables of function `func`, showing where each parameter `num1`, `num2`, `numd1`, etc., and each local variable sum, etc., appears in the frame. For example, the details you are required to provide are as follows:
 
 ```
         1:   name of variable in frame location 1
@@ -74,6 +74,10 @@ _Question_: 3\. Specify. the portion of the frame containing the parameters and 
 ```
 
 ^ Recall that a `double` takes twice as many spaces as an `int`.
+
+TODO
+
+_Question_: 3.2\. Now add another expression of your choosing involving `sum` and `prod` variables. Describe the additional details that are included in the frame following the format of the previous question.
 
 TODO
 
@@ -94,12 +98,14 @@ and after the third line it looks like:
 
 Remember how a stack machine works: operators like "add" pop their operands from the stack and then push the result (the above example shows how `num1` and `num2` are pushed on the stack, then they are popped and the value of `num1 + num2` is pushed onto the stack.)
 
-_Question_: 4\. "Draw" the frame for `func` (as in the previous question 3). Then "draw" the contents of the stack after each line of bytecode in function `func`. 
+_Question_: 4.1\. "Draw" the frame for `func` (as in the previous question 3). Then "draw" the contents of the stack after each line of bytecode in function `func`.
 
 TODO
 
+_Question_: 4.2\. Now add the `print` statement that displays the value of `num`. Describe the changes to the stack that occur as a result of this addition.
+
 ### Reflection
 
-What were your biggest learning points during this lab and what challenges have you  encountered during this lab?
+What were your biggest learning points during this lab and what challenges have you encountered during this lab?
 
 TODO

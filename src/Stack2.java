@@ -7,5 +7,6 @@ public class Stack2 {
   public void func(int num1, int num2) {
     int num;
     num = ((num1 + num2)*(num1 + num2))+((num1 + num2)*(num1 + num2));
+    // TODO: Add a print statement
   }
 }
