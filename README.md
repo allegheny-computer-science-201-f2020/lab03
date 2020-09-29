@@ -82,7 +82,7 @@ On the left side, click on the Explorer icon (2nd down). Click Open Folder and e
 
 In the Explorer frame, right click, and click on Open in Integrated Terminal. ![](InstructionImages/Image3.png?raw=true)
 
-You now have a terminal in which you can run most typical Linux commands. Ubuntu 20.04 is running with VSCode. Most work will be completed in the terminal. Documents can be opened above the terminal. To the left in explorer, you can see unsaved files. Click on unsaved to give the document a name and location. After that, it will autosave. ![](InstructionImages/Image4.png?raw=true)
+You now have a terminal in which you can run most typical Linux commands. Ubuntu 20.04 is running with VSCode. Most work will be completed in the terminal. You are encouraged to mount a directory as a volume as described in the documentation at [progator Docker Image](https://hub.docker.com/repository/docker/janyljumadinova/progator) so that you can have access to your local repository files, which can be accessed from the "environment" directory in "root".
 
 Please remember to stop the container after you are finished working in it. You can use the command: `docker container list` to see the ID of the running container, and `docker container stop container-ID` to stop the container by replacing `container-ID` with its actual ID.
 
@@ -105,6 +105,11 @@ docker run --rm --name dockagator \
   -v "$HOME/.dockagator:/root/.local/share" \
   gatoreducator/dockagator
 ```
+If you are running your program on a Windows Operating System, you should run the following command instead, replacing the word "user" with the username of your machine:
+
+```bash
+docker run --rm --name dockagator -v "%cd%":/project -v "C:\Users\user/.dockagator":/root/.local/share gatoreducator/dockagator
+```
 
 Since the above `docker run` command uses a Docker images that, by default, runs `gradle grade` and then exits the Docker container, you may want to instead run the following command so that you enter an "interactive terminal" that will allow you to repeatedly run commands within the Docker container.
 
@@ -113,6 +118,12 @@ docker run -it --rm --name dockagator \
   -v "$(pwd)":/project \
   -v "$HOME/.dockagator":/root/.local/share \
   gatoreducator/dockagator /bin/bash
+```
+
+In Windows OS (replace `user` with your machine's username):
+
+```bash
+docker run -it --rm --name dockagator -v "%cd%":/project -v "C:\Users\user/.dockagator":/root/.local/share gatoreducator/dockagator /bin/bash
 ```
 
 Once you have typed this command, you can use the [GatorGrader tool](https://github.com/GatorEducator/gatorgrader) in the Docker container by typing the command `gradle grade` in your terminal. Running this command will produce a lot of output that you should carefully inspect. If GatorGrader's output shows that there are no mistakes in the assignment, then your source code and writing are passing all of the automated baseline checks. However, if the output indicates that there are mistakes, then you will need to understand what they are and then try to fix them.
@@ -130,17 +141,17 @@ Here are some additional commands that you may need to run when using Docker:
 
 ### GitHub Actions CI
 
-GitHub Actions CI is configured to check the Markdown files in the repository with "mdl". If your program and the writing meets the minimal established requirements, then you will see a green :heavy_check_mark: in the listing of commits in GitHub. If your submission does not meet the requirements, a red :heavy_multiplication_x: will appear instead. Since this assignment contains a large creative and open-ended portion, the majority of your lab grade will be based on the satisfaction of the requirements outlined in the previous sections.
+GitHub Actions CI is configured to check the program files for minimum requirements and the Markdown files in the repository with "mdl". If your program and the writing meets the minimal established requirements, then you will see a green :heavy_check_mark: in the listing of commits in GitHub. If your submission does not meet the requirements, a red :heavy_multiplication_x: will appear instead. Since this assignment contains a large creative and open-ended portion, the majority of your lab grade will be based on the satisfaction of the requirements outlined in the previous sections with the details included in the `report.md` file.
 
 ## Evaluation
 
 The grade that a student receives on this assignment will have the following components. In addition to these three main components, student's grade may be affected by their adherence or the lack of adherence to the [Code of Conduct](https://github.com/allegheny-computer-science-201-f2020/lab01-cs201f2020/blob/main/conduct.md) developed for this course.
 
-Percentage of Correct GatorGrader Checks and GitHub Actions CI Build Status [up to 15%]: Students are encouraged to repeatedly revise their submission to ensure that it passes all of GatorGrader's checks and receives a CI pass.
+*Percentage of Correct GatorGrader Checks and GitHub Actions CI Build Status [up to 15%]*: Students are encouraged to repeatedly revise their submission to ensure that it passes all of GatorGrader's checks and receives a CI pass.
 
-Mastery of Technical Writing [up to 15%]: Students will also receive a portion of the lab grade when the responses to the technical writing questions presented in the "writing/report.md" reveal a mastery of both writing skills and conceptual and technical knowledge. To receive this portion of the grade, the submitted writing should have correct spelling, grammar, and punctuation in addition to following the rules of Markdown and providing conceptually and technically accurate answers.
+*Mastery of Technical Knowledge and Skills [up to 20%]*: Students will also receive a portion of their assignment grade when their program source files reveal that they have mastered all of the technical knowledge and skills developed during the completion of this lab. Since this lab assignment does not require significant implementation, this portion of the grade is not heavily weighted.
 
-Mastery of Technical Knowledge and Skills [up to 70%]: Students will receive a largest portion of their assignment grade when their project implementation reveals that they have mastered all of the technical knowledge and skills developed during the completion of this project. As a part of this grade, the instructor will assess aspects of the project including, but not limited to, the designed grammar, correctness of the scanner and the parser, the completeness and correctness of the test cases, and the use of effective source code comments, and Git commit messages.
+*Mastery of Technical Writing [up to 65%]*: Students will  receive a largest portion of this lab grade when the responses to the technical writing questions presented in the "writing/report.md" reveal a mastery of both writing skills and conceptual and technical knowledge. To receive this portion of the grade, the submitted writing should provide conceptually and technically accurate answers and have correct spelling, grammar, and punctuation in addition to following the rules of Markdown.
 
 ## Problems
 
