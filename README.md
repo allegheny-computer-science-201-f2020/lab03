@@ -16,16 +16,6 @@
 
 - [Tasks](#tasks)
 
-  - [Scopes in JavaScript](#scopes-in-javascript)
-
-  - [Frames](#frames)
-
-  - [Stack Structure in Java](#stack-structure-in-java)
-
-  - [A stack machine computation](#a-stack-machine-computation)
-
-  - [Optimization](#optimization)
-
 - [Running and Testing](#running-and-testing)
 
   - [Docker](#docker)
@@ -46,9 +36,8 @@ Please watch a video introducing this lab assignment under the course's YouTube 
 
 ## Objectives
 
-- To understand the scope rules and issues.
+- To understand the scope rules and storage management.
 - To experiment, visualize and study the stack structure in JavaScript and in Java.
-- To analyze the code optimization.
 
 ## Reading Assignment
 
@@ -62,7 +51,9 @@ Please go into the #labs channel in our Slack team and find the announcement tha
 
 ## Tasks
 
-For this laboratory assignment, you will complete a set of small experiments to gain a deeper understanding into scoping. Please navigate to the "writing/report.md" document to find outline of specific experiments and the tasks you are invited to engage in.
+For this laboratory assignment, you will complete a set of small experiments to gain a deeper understanding into scoping and storage management. Please navigate to the "writing/report.md" document to find outline of specific experiments and the tasks you are invited to engage in.
+
+## Running and Testing
 
 ### Docker
 
