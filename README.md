@@ -96,6 +96,7 @@ docker run --rm --name dockagator \
   -v "$HOME/.dockagator:/root/.local/share" \
   gatoreducator/dockagator
 ```
+
 If you are running your program on a Windows Operating System, you should run the following command instead, replacing the word "user" with the username of your machine:
 
 ```bash
