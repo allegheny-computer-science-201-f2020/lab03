@@ -46,9 +46,9 @@ Please watch a video introducing this lab assignment under the course's YouTube 
 
 ## Objectives
 
-- To understand the scope rules and issues. 
-- To experiment, visualize and study the stack structure in JavaScript and in Java. 
-- To analyze the code optimization. 
+- To understand the scope rules and issues.
+- To experiment, visualize and study the stack structure in JavaScript and in Java.
+- To analyze the code optimization.
 
 ## Reading Assignment
 
@@ -62,31 +62,29 @@ Please go into the #labs channel in our Slack team and find the announcement tha
 
 ## Tasks
 
-For this laboratory assignment, you will complete a set of small experiments to gain a deeper understanding into scoping. Please navigate to the "writing/report.md" document to find outline of specific experiments  and the tasks you are invited to engage in.
-
+For this laboratory assignment, you will complete a set of small experiments to gain a deeper understanding into scoping. Please navigate to the "writing/report.md" document to find outline of specific experiments and the tasks you are invited to engage in.
 
 ### Docker
 
-We use Docker for this course. This provides an environment with the languages that will be used in the class and ensures that everyone uses the same versions for help and grading purposes.  Follow the instructions at the `progator` Docker image link provided  belowto get started.  
- 
-[progator docker Image](https://hub.docker.com/repository/docker/janyljumadinova/progator)
+We use Docker for this course. This provides an environment with the languages that will be used in the class and ensures that everyone uses the same versions for help and grading purposes. Follow the instructions at the `progator` Docker image link provided below to get started. Additionally, please watch the lab introduction video for a working example of how to access the Docker image for this course and how to mount a directory as a volume.
+
+[progator Docker Image](https://hub.docker.com/repository/docker/janyljumadinova/progator)
 
 ### Working in the Localhost Window
+
 Once you have localhost open in your browser, all other instructions will be completed in that window. If you close the window, just go to localhost again - you will not lose anything.
 
 When you open localhost, you will see:
 
 ![](InstructionImages/Image1.png?raw=true)
 
-On the left side, click on the Explorer icon (2nd down).
-Click Open Folder and enter "/root/"
-![](InstructionImages/Image2.png?raw=true)
+On the left side, click on the Explorer icon (2nd down). Click Open Folder and enter "/root/" ![](InstructionImages/Image2.png?raw=true)
 
-In the Explorer frame, right click, and click on Open in Integrated Terminal.
-![](InstructionImages/Image3.png?raw=true)
+In the Explorer frame, right click, and click on Open in Integrated Terminal. ![](InstructionImages/Image3.png?raw=true)
 
-You now have a terminal in which you can run most typical Linux commands. Ubuntu 20.04 is running with VSCode. Most work will be completed in the terminal. Documents can be opened above the terminal. To the left in explorer, you can see unsaved files. Click on unsaved to give the document a name and location. After that, it will autosave. 
-![](InstructionImages/Image4.png?raw=true)
+You now have a terminal in which you can run most typical Linux commands. Ubuntu 20.04 is running with VSCode. Most work will be completed in the terminal. Documents can be opened above the terminal. To the left in explorer, you can see unsaved files. Click on unsaved to give the document a name and location. After that, it will autosave. ![](InstructionImages/Image4.png?raw=true)
+
+Please remember to stop the container after you are finished working in it. You can use the command: `docker container list` to see the ID of the running container, and `docker container stop container-ID` to stop the container by replacing `container-ID` with its actual ID.
 
 ### GatorGrader
 
@@ -140,7 +138,7 @@ The grade that a student receives on this assignment will have the following com
 
 Percentage of Correct GatorGrader Checks and GitHub Actions CI Build Status [up to 15%]: Students are encouraged to repeatedly revise their submission to ensure that it passes all of GatorGrader's checks and receives a CI pass.
 
-Mastery of Technical Writing [up to 15%]: Students will also receive a portion of the lab grade when the responses to the technical writing questions presented in the 'writing/report.md' reveal a mastery of both writing skills and conceptual and technical knowledge. To receive this portion of the grade, the submitted writing should have correct spelling, grammar, and punctuation in addition to following the rules of Markdown and providing conceptually and technically accurate answers.
+Mastery of Technical Writing [up to 15%]: Students will also receive a portion of the lab grade when the responses to the technical writing questions presented in the "writing/report.md" reveal a mastery of both writing skills and conceptual and technical knowledge. To receive this portion of the grade, the submitted writing should have correct spelling, grammar, and punctuation in addition to following the rules of Markdown and providing conceptually and technically accurate answers.
 
 Mastery of Technical Knowledge and Skills [up to 70%]: Students will receive a largest portion of their assignment grade when their project implementation reveals that they have mastered all of the technical knowledge and skills developed during the completion of this project. As a part of this grade, the instructor will assess aspects of the project including, but not limited to, the designed grammar, correctness of the scanner and the parser, the completeness and correctness of the test cases, and the use of effective source code comments, and Git commit messages.
 

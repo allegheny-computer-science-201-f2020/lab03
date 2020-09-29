@@ -1,12 +1,18 @@
+/**
+TODO: Add your name and the needed Javadoc comment
+*/
 public class Stack1 {
-    public void func(int i, int j, double a, double b, char p, char q) {
-        int sum;
-        double prod;
-        char max;
-        sum = i+j;
-        prod = a*b;
-        max = p;
-        if (p < q)
-            max = q;
+  // TODO: Add the Javadoc comment
+  public void func(int num1, int num2, double numd1, double numd2,
+  char char1, char char2) {
+    int sum;
+    double prod;
+    char max;
+    sum = num1 + num2;
+    prod = numd1 * numd2;
+    max = char1;
+    if (char1 < char2) {
+      max = char2;
     }
+  }
 }

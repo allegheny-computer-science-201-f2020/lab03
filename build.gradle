@@ -12,19 +12,12 @@ buildscript {
    }
    mavenLocal()
    dependencies {
-     // other options, only needed for local testing:
-     // classpath "org.gatored:gatorgradle:+"
-     // classpath "gradle.plugin.org.gatored:gatorgradle:+"
-     classpath "gradle.plugin.org.gatored:gatorgradle:0.4.4"
-   }
+   	// other option, only needed for specifying a specific version of the Gradle plugin:
+   	classpath "gradle.plugin.org.gatored:gatorgradle:+"
+    }
  }
 }
 
-// comment out gatorgradle if you want to use dev version
-plugins {
-   id "org.gatored.gatorgradle" version "0.3.4"
-   id "java"
-}
 
 // apply the version of the gradle plugin
 apply plugin: 'java'
@@ -55,13 +48,3 @@ jar {
 // give the name of the application to run with "gradle run" command
 apply plugin: 'application'
 mainClassName = 'not.used'
-
-// perform checkstyle checking with the "gradle check" command
-apply plugin: 'checkstyle'
-checkstyle.toolVersion = '8.1'
-checkstyle {
- ignoreFailures = false
- maxWarnings = 0
- maxErrors = 0
- configFile = new File(rootDir, "config/checkstyle/google_checks.xml")
-}
