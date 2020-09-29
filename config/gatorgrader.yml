@@ -40,7 +40,7 @@ src:
 # --> check the technical writing for various characteristics
 writing/report.md:
     ConfirmFileExists
-    CountFileWords --count 250
+    CountFileWords --count 500
     CountMarkdownTags --tag "heading" --count 7 --exact
     #CountMarkdownTags --tag "code" --count 3 --exact
     CountMarkdownTags --tag "code_block" --count 6 --exact
@@ -49,4 +49,4 @@ writing/report.md:
     MatchFileFragment --fragment "TODO" --count 0 --exact
 
 # --> check that the number of commits in the Git repository is beyond a threshold
-CountCommits --count 1
+CountCommits --count 10
