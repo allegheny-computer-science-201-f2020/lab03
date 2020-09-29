@@ -20,7 +20,9 @@ TODO
 
 1.3\. Based on the `Scope.js` program and your understanding of scoping, explain how JavaScript's "function scope'' rule is interpreted. TODO
 
-1.4\. State whether or not JavaScript requires "declare before use'' for variables. TODO
+1.4\. State whether or not JavaScript requires "declare before use'' for variables. 
+
+TODO
 
 ### 2\. Frames
 
@@ -40,7 +42,9 @@ From the dropdown menu, choose JavaScript. Enter the following code:
 
 Click the "Visualize Execution'' button and then keep pressing the "Next" button, watching the animation on the right side at each step.
 
-_Question_: 2\. Provide a brief (one paragraph) explanation of the various stack frames that appear and disappear. TODO
+_Question_: 2\. Provide a brief (one paragraph) explanation of the various stack frames that appear and disappear. 
+
+TODO
 
 ### 3\. Stack Structure in Java
 
@@ -90,6 +94,12 @@ and after the third line it looks like:
 
 Remember how a stack machine works: operators like "add" pop their operands from the stack and then push the result (the above example shows how `num1` and `num2` are pushed on the stack, then they are popped and the value of `num1 + num2` is pushed onto the stack.)
 
-_Question_: 4\. "Draw" the frame for `func` (as in the previous question 3). Then "draw" the contents of the stack after each line of bytecode in function `func`. TODO
+_Question_: 4\. "Draw" the frame for `func` (as in the previous question 3). Then "draw" the contents of the stack after each line of bytecode in function `func`. 
+
+TODO
 
 ### Reflection
+
+What were your biggest learning points during this lab and what challenges have you  encountered during this lab?
+
+TODO
