@@ -1,4 +1,4 @@
-# :crocodile: Developing a Programming Language, CMPSC 201 Fall 2020: LAB 02 Assignment
+# :crocodile: Scoping, CMPSC 201 Fall 2020: LAB 03 Assignment
 
 ## DUE: October 8th by 3:00pm
 
